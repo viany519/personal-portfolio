@@ -9,7 +9,7 @@ export default defineConfig({
       input: {
         main: resolve(process.cwd(), 'index.html'),
         greenpulse: resolve(process.cwd(), 'greenpulse.html'),
-        hotelbooking: resolve(process.cwd(), 'hotel-booking-case-study.html'),
+        //hotelbooking: resolve(process.cwd(), 'hotel-booking-case-study.html'),
         hoteldashboard: resolve(process.cwd(), 'hotel-booking-dashboard.html'),
         triverse: resolve(process.cwd(), 'triverse-project.html'),
         simkost: resolve(process.cwd(), 'simkost-project.html'),
