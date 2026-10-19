@@ -3254,3 +3254,15 @@ body.dark .experience-photos img{border-color:rgba(90,70,91,.7)}
   .certificate-image { max-height: 130px; object-fit: contain; }
   .experience-rope { height: 30px; }
 }
+
+
+/* Professional Technology Badges */
+.project-tech-badges span {
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  font-style: normal;
+  line-height: 1.3;
+}
