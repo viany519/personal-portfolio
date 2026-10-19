@@ -3266,3 +3266,95 @@ body.dark .experience-photos img{border-color:rgba(90,70,91,.7)}
   font-style: normal;
   line-height: 1.3;
 }
+
+
+/* FIX PROJECT HIGHLIGHT MOBILE */
+@media (max-width: 640px) {
+
+  .selected-work-section .featured-card {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    height: auto;
+    min-height: 0;
+    max-width: none;
+    overflow: hidden;
+  }
+
+  /* Gambar berada di atas */
+  .selected-work-section .featured-card-media {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    flex: none;
+    overflow: hidden;
+  }
+
+  /* Menampilkan gambar secara utuh */
+  .selected-work-section .featured-card-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /* Informasi project di bawah gambar */
+  .selected-work-section .project-info {
+    width: 100%;
+    flex: 1 1 auto;
+    padding: 22px 20px;
+    overflow: visible;
+  }
+
+  .selected-work-section .project-info small {
+    font-size: 10px;
+    letter-spacing: 1px;
+    white-space: normal;
+    overflow: visible;
+  }
+
+  .selected-work-section .project-info h3 {
+    font-size: 21px;
+    line-height: 1.3;
+    margin: 10px 0;
+  }
+
+  /* Label teknologi lebih rapi */
+  .selected-work-section .project-tech-badges {
+    flex-wrap: wrap;
+    max-height: none;
+    overflow: visible;
+    gap: 7px;
+    margin-bottom: 14px;
+  }
+
+  .selected-work-section .project-tech-badges span {
+    font-family: 'Manrope', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 10px;
+  }
+
+  /* Deskripsi tidak terpotong */
+  .selected-work-section .project-info p {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+
+  .selected-work-section .project-info
+  .project-card-actions {
+    margin-top: auto;
+    gap: 10px;
+  }
+
+  .selected-work-section .project-info
+  a.project-primary-link {
+    min-height: 42px;
+    font-size: 12px;
+  }
+}
