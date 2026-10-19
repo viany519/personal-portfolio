@@ -3358,3 +3358,51 @@ body.dark .experience-photos img{border-color:rgba(90,70,91,.7)}
     font-size: 12px;
   }
 }
+
+
+
+/* MOBILE PROJECT HIGHLIGHTS ARROWS */
+@media (max-width: 640px) {
+
+  .selected-work-section .row-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #b85b82;
+    border: 1px solid #efd5e2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    z-index: 20;
+    animation: none;
+  }
+
+  .selected-work-section .row-arrow-left {
+    left: 4px;
+  }
+
+  .selected-work-section .row-arrow-right {
+    right: 4px;
+  }
+
+  .selected-work-section .row-arrow.is-visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Swipe indicator */
+  .selected-work-section .projects-row-meta::after {
+    content: "← Swipe to explore →";
+    display: block;
+    margin-top: 10px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #b85b82;
+  }
+}
+
