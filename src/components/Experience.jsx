@@ -9,6 +9,7 @@ import icscGroup from "../assets/images/experience-icsc-group.png";
 import icscHerbal from "../assets/images/experience-icsc-herbal.png";
 import certificateAI from "../assets/images/certificate-ai900.png";
 import certificateBNCC from "../assets/images/certificate-bncc.png";
+import certificateIBM from "../assets/images/certificate-ibm-data-fundamentals.png";
 
 const experiences = [
   {period:"May 2026",title:"International Event Operations Associate",org:"STEMpedia / Codeavour 7.0 International Showdown",
@@ -85,6 +86,26 @@ function Experience() {
 
           <div className="credential-panel certification-panel">
             <div className="credential-heading"><span>CERTIFICATIONS</span></div>
+            <div className="credential-item">
+              <span>Oct 2026</span>
+              <h3>Data Fundamentals</h3>
+              <p>IBM SkillsBuild — Issued October 23, 2026</p>
+              <img
+                className="certificate-image"
+                src={certificateIBM}
+                alt="IBM SkillsBuild Data Fundamentals Certificate"
+                />
+              <a
+                className="recommendation-link"
+                href="https://www.credly.com/badges/5dd0c198-a65f-4a7f-9159-2062d16b838c"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Verify Credential
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
             <div className="credential-item">
               <span>Mar 2026</span>
               <h3>Microsoft Certified: Azure AI Fundamentals (AI-900)</h3>
